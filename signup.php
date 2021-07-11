@@ -11,9 +11,6 @@ require "header.php";
         <input type="password" name="pwd" placeholder="Password">
         <input type="password" name="pwd-repeat" placeholder=" Repeat Password">
         <button type="submit" name='signup-submit'>Sign Up</button>
-
-
-
     </form>
     <main>
 
