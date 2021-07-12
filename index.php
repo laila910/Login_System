@@ -4,8 +4,17 @@ require "header.php";
 
 ?>
 <main>
-    <p>You are Logged Out!</p>
-    <p>You are Logged in!</p>
+   <?php
+   if(isset($_SESSION['userId'])){
+       echo '<p>You are Logged in!</p>';
+   }else{
+       echo '<p>You are Logged out!</p>';
+   }
+
+?>
+
+  
+    
 </main>
 
 <?php
