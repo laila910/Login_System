@@ -22,7 +22,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        background-color: aqua;
+        background-color: brown;
     }
     
     main p {
@@ -35,7 +35,7 @@
     main {
         width: 100%;
         text-align: center;
-        background-color: burlywood;
+        background-color: brown;
         padding-bottom: 90px;
     }
     
