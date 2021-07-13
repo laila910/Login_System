@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'includes/dbh.inc.php';
+
 ?>
  <!DOCTYPE html>
  <html lang="en">
@@ -27,34 +27,26 @@ require 'includes/dbh.inc.php';
 
 
                  </ul>
+                     <div>
                  <?php 
-                //     if(isset($_SESSION['userId'])){
-                //       echo '<form method="post" action="includes/login.inc.php" enctype="multipart/form-data">
-                //          <input type="text" name="mailuid" placeholder="Enter UserName/E-mail...">
-                //          <input type="password" name="pwd" placeholder="Password">
-                //          <button type="submit" name='login-submit'>login</button>
-                //      </form>';
-                //     }else{
-                //       echo ' <a href='signup.php'>Sign-Up</a>
-                //      <form method="post" action="includes/logout.inc.php" enctype="multipart/form-data">
-                //          <button type="submit" name='logout-submit'>logout</button>
-                //      </form>';
-                //    }
+                    if(isset($_SESSION['userId'])){
+                      echo ' <form method="post" action="includes/logout.inc.php" enctype="multipart/form-data">
+                         <button type="submit" name="logout-submit">logout</button>
+                     </form>';
+                    }else{
+                      echo '<form method="post" action="includes/login.inc.php" enctype="multipart/form-data">
+                         <input type="text" name="mailuid" placeholder="Enter UserName/E-mail...">
+                         <input type="password" name="pwd" placeholder="Password">
+                         <button type="submit" name="login-submit">login</button>
+                     </form>
+
+                     <a href="signup.php">Sign-Up</a> ';
+                   }
                
                  
                  ?> 
-                 <div>
-                     <form method="post" action="includes/login.inc.php" enctype="multipart/form-data">
-                         <input type="text" name="mailuid" placeholder="Enter UserName/E-mail...">
-                         <input type="password" name="pwd" placeholder="Password">
-                         <button type="submit" name='login-submit'>login</button>
-                     </form>
-
-                     <a href='signup.php'>Sign-Up</a>
-                     <form method="post" action="includes/logout.inc.php" enctype="multipart/form-data">
-                         <button type="submit" name='logout-submit'>logout</button>
-                     </form>
                  </div>
+                    
 
              </nav>
          </header>
