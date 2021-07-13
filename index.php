@@ -1,4 +1,5 @@
 <?php
+
 require "header.php";
 
 
@@ -9,8 +10,9 @@ require "header.php";
        echo '<p>You are Logged in!</p>';
    }else{
        echo '<p>You are Logged out!</p>';
+       
    }
-
+ 
 ?>
 
   
