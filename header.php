@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+require 'includes/dbh.inc.php';
 ?>
  <!DOCTYPE html>
  <html lang="en">
@@ -40,7 +40,7 @@ session_start();
                 //          <button type="submit" name='logout-submit'>logout</button>
                 //      </form>';
                 //    }
-                 
+               
                  
                  ?> 
                  <div>
